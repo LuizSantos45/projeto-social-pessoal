@@ -7,19 +7,56 @@
 }
 
 html, body {
-    background-color: black;
+    background-color: #000000;
     width: 100vw;
-    height: 1000vh;
+    height: 100vh;
 }
 
 body {
-    background-image: url(../imagens/tela-cinza-home.jpg);
-    background-repeat: no-repeat;
+    background: url(../imagens/tela-cinza-home.jpg) no-repeat top center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-iframe {
+main {
+    height: 100vh;
+    position: relative;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 412px;
+    height: 713px;
+    background: url(../imagens/telagold-home.png);
     background-repeat: no-repeat;
-    width: 400px;
-    height: 450px;
+}
+
+section#tela, iframe {
+    position: relative;
+    top: 85px;
+    left: 50px;
+    width: 309px;
+    height: 542px;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais, img {
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 2px 4px 6px #00000042;
+    margin: 6px;
+    width: 45px;
+}
+
+section#redes-sociais, img:hover {
+    box-shadow: 2px 4px 6px #00000085;
+    border: 1px solid #00000004;
+    transition:  trasform .4s;
 }
